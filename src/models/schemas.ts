@@ -1,7 +1,6 @@
 import Joi from 'joi';
 
 const noteValidateSchema = Joi.object({
-	id: Joi.string().required(),
 	name: Joi.string().required(),
 	createdAt: Joi.string().required(),
 	content: Joi.string().required(),

@@ -4,7 +4,7 @@ export interface INote {
 	createdAt: string;
 	content: string;
 	category: string;
-	status: 'active' | 'archived';
+	status: string;
 }
 
 export interface IStats {
