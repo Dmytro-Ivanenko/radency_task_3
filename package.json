@@ -2,12 +2,12 @@
 	"name": "radency_task_3",
 	"version": "1.0.0",
 	"description": "",
-	"main": "main.ts",
+	"main": "server.ts",
 	"type": "module",
 	"scripts": {
 		"dev": "npx nodemon",
 		"build": "rimraf ./build && npx tsc",
-		"start": "npm run build && node build/main",
+		"start": "npm run build && node build/server",
 		"lint": "npx eslint ./src",
 		"format": "npx eslint ./src --fix"
 	},
