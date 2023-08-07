@@ -13,7 +13,7 @@ app.use((req, res) => {
 });
 app.use((err, req, res) => {
     const { status = 500, message = 'Server error' } = err;
-    res.status(status).json({ message });
+    res.status(status).json({ error: message });
 });
 export default app;
 //# sourceMappingURL=main.js.map

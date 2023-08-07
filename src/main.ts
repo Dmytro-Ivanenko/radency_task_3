@@ -20,7 +20,7 @@ app.use((req: Request, res: Response) => {
 
 app.use((err: CustomError, req: Request, res: Response) => {
 	const { status = 500, message = 'Server error' } = err;
-	res.status(status).json({ message });
+	res.status(status).json({ error: message });
 });
 
 export default app;
